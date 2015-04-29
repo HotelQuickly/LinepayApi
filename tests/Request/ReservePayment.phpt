@@ -30,7 +30,8 @@ class ReservePaymentTest extends BaseTestCase
 				->setParam('amount', '1.1')
 				->setParam('currency', 'USD')
 				->setParam('confirmUrl', 'hotelquickly://LinePayDone/?something')
-				->setParam('orderId', '#HQ1234567');
+				->setParam('orderId', '#HQ1234567')
+				->setParam('langCd', 'th');
 		});
 
 		Assert::equal('0000', $response->returnCode);

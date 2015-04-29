@@ -25,8 +25,25 @@ class ReservePayment extends RequestAbstract {
 		'confirmUrlType', // CLIENT: A user based URL (default), SERVER: A server based URL. Users just need to check the payment information screen in LINE Pay which then notifies the Merchant server that the payment is available.
 		'cancelUrl',
 		'payType', // NORMAL: Single payment (default), PREAPPROVED: Preapproved payment
-		'langCd', // ja: Japanese, ko: Korean, en: English, zh-Hans: Chinese (Simplified), zh-Hant: Chinese (Traditional), th: Thai
+		'langCd', // check $supportedLangCd
 		'capture' // (boolean) Whether to capture or not
 	];
+
+	private $supportedLangCd = [
+		'ja', // Japanese
+		'ko', // Korean
+		'en', // English
+		'zh-Hans', // Chinese (Simplified)
+		'zh-Hant', // Chinese (Traditional)
+		'th' // Thai
+	];
+
+	/**
+	 * @return array
+	 */
+	public function getSupportedLangCd()
+	{
+		return $this->supportedLangCd;
+	}
 
 }
