@@ -12,6 +12,9 @@ class RequestFactory
 	// These const are Request Names
 	const RESERVE_PAYMENT = 'ReservePayment';
 	const CONFIRM_PAYMENT = 'ConfirmPayment';
+	const VOID_AUTHORIZATION = 'VoidAuthorization';
+	const CAPTURE_AUTHORIZATION = 'CaptureAuthorization';
+	const REFUND_PAYMENT = 'RefundPayment';
 
 	private $apiBaseUrl;
 	private $channelId;
