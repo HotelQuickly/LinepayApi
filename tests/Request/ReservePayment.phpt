@@ -27,8 +27,8 @@ class ReservePaymentTest extends BaseTestCase
 	{
 		$response = $this->linepayManager->send(RequestFactory::RESERVE_PAYMENT, function(ReservePayment $request) {
 			$request->setParam('productName', 'Byte test booking #HQ1234567')
-				->setParam('amount', '1.1')
-				->setParam('currency', 'USD')
+				->setParam('amount', '5')
+				->setParam('currency', 'THB') // current credentials accept only THB
 				->setParam('confirmUrl', 'hotelquickly://LinePayDone/?something')
 				->setParam('orderId', '#HQ1234567')
 				->setParam('langCd', 'th');
