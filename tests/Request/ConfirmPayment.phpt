@@ -31,7 +31,7 @@ class ConfirmPaymentTest extends BaseTestCase
 				->setParam('currency', 'USD');
 		});
 
-		Assert::equal('1159', $response->returnCode);
+		Assert::true(in_array($response->returnCode, array(1159, 1106)));
 	}
 }
 

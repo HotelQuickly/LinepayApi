@@ -29,7 +29,7 @@ class VoidAuthorizationTest extends BaseTestCase
 			$request->setUrlParam('transactionId', '2015049910000934410');
 		});
 
-		Assert::equal('1150', $response->returnCode);
+		Assert::true(in_array($response->returnCode, array(1150, 1106)));
 	}
 }
 
