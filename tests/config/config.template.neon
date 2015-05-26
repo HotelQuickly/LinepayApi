@@ -2,6 +2,3 @@ linepayApi:
 	apiBaseUrl: https://sandbox-api-pay.line.me/v1 # https://api-pay.line.me/v1 (production)
 	channelId: 1431779273
 	channelSecretKey: 1f922133884cdef6fd34043e5003ce21
-
-extensions:
-	linepayApi: \HQ\LinepayApi\LinepayApiExtension

@@ -31,7 +31,7 @@ class CaptureAuthorizationTest extends BaseTestCase
 				->setParam('currency', 'USD');
 		});
 
-		Assert::equal('1169', $response->returnCode);
+		Assert::equal('1150', $response->returnCode);
 	}
 }
 

@@ -30,7 +30,7 @@ class RefundPaymentTest extends BaseTestCase
 				->setParam('refundAmount', '1.1');
 		});
 
-		Assert::equal('1169', $response->returnCode);
+		Assert::equal('1150', $response->returnCode);
 	}
 }
 

@@ -10,4 +10,9 @@ $configurator->createRobotLoader()
 	->addDirectory(__DIR__ . '/../src')
 	->register();
 $configurator->addConfig(__DIR__ . '/config/config.neon');
+
+$configurator->onCompile[] = function ($configurator, $compiler) {
+	$compiler->addExtension('molpayApi', new \HQ\LinepayApi\LinepayApiExtension());
+};
+
 return $configurator->createContainer();
