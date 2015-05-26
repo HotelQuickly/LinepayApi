@@ -1,6 +1,6 @@
 # LinepayApi
 
-[![Build Status](https://travis-ci.org/HotelQuickly/linepayApi.svg?branch=master)](https://travis-ci.org/HotelQuickly/linepayApi)
+[![Build Status](https://travis-ci.org/HotelQuickly/LinepayApi.svg?branch=master)](https://travis-ci.org/HotelQuickly/LinepayApi)
 
 
 ### Installation
